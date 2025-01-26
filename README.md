@@ -1,2 +1,10 @@
-# ashishpokhrel27.github.io
-ashishpokhrel27.github.io/portfolio
+# Computer Vision Researcher
+
+### Education
+Computer Science, M.Sc.
+
+### Work Experience
+Data Engineer @ LIS Nepal Pvt. Ltd.
+
+### Projects
+ChestXray Scan
