@@ -20,6 +20,3 @@ I am a Data Engineer and Computer Vision enthusiast with a strong foundation in 
 - Conducted **customer segmentation** using RFM analysis & clustering algorithms  
 - Developed **data pipelines & reports** using Python, Snowflake, and Azure  
 - Automated data redundancy reports using **PySpark, Airflow & AWS**  
-
-### **Undergrad Tutor**  
-📅 **Dec 2022 - July
