@@ -1,5 +1,5 @@
 ## About Me  
-I am a Data Engineer and Computer Vision enthusiast with a strong foundation in data engineering and machine learning. With expertise in Python, SQL, and frameworks like PyTorch and TensorFlow, I specialize in building scalable data pipelines and creating impactful data-driven solutions. Passionate about solving complex problems, I leverage my skills in visualization tools like Power BI and Tableau to transform raw data into meaningful insights. Always eager to learn and innovate, I thrive on tackling challenges in AI, automation, and big data processing.  
+I’m a Data Engineer and Computer Vision enthusiast with expertise in Python, SQL, and frameworks like PyTorch and TensorFlow. I specialize in building scalable data pipelines, creating data-driven solutions, and using tools like Power BI and Tableau to turn data into insights. Passionate about AI, automation, and big data, I’m always excited to solve complex problems and innovate.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashishpokhrel)  [![Gmail](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ashishpokhrel27@gmail.com)
 
@@ -24,3 +24,14 @@ I am a Data Engineer and Computer Vision enthusiast with a strong foundation in 
 - Built a complete **ETL pipeline**, transforming data and creating actionable visuals using **Python**, **SQL**, and **Power BI**.
 - Conducted in-house research on **retail customer segmentation** and converted dashboards from **Qlik** to **Power BI**, streamlining data integration and improving decision-making through enhanced visualization and actionable insights.
 
+---
+
+## 💻 Projects  
+### **Chest CT-Scan Lung Cancer Classification**  
+- Built a **PyTorch** pipeline for multi-class classification of Chest CT-Scans using **DenseNet**, achieving **88.89%** accuracy across four lung cancer categories.
+- Enhanced model performance with **data augmentation** and **transfer learning** techniques.
+
+### **Background Image Removal Web App**  
+- Implemented **semantic segmentation** techniques utilizing **ResNet50**, **FCN-32s**, and fine-tuned **VGG16** models on the **PASCAL VOC2012** dataset for background image removal.
+- Created a fully functional website that processes portrait input images, extracts the foreground, and generates a PNG image, using **ReactJS**, **Django**, and **CSS3**.
+- [View the project on GitHub](https://github.com/aashishpokhrel27/BackgroundImageRemoval)
