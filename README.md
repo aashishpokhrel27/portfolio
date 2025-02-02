@@ -1,4 +1,4 @@
-## About Me  
+## Introduction  
 I’m a Data Engineer and Computer Vision enthusiast with expertise in Python, SQL, and frameworks like PyTorch and TensorFlow. I specialize in building scalable data pipelines, creating data-driven solutions, and using tools like Power BI and Tableau to turn data into insights. Passionate about AI, automation, and big data, I’m always excited to solve complex problems and innovate.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aashishpokhrel)  [![Gmail](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ashishpokhrel27@gmail.com)
