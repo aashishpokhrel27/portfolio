@@ -17,6 +17,10 @@ I am a Data Engineer and Computer Vision enthusiast with a strong foundation in 
 ## 💼 Professional Experience  
 ### **Senior Software Engineer, Data - LIS Nepal Pvt. Ltd.**  
 📍 Lalitpur, Nepal | 📅 **July 2021 - Present**  
-- Conducted **customer segmentation** using RFM analysis & clustering algorithms  
-- Developed **data pipelines & reports** using Python, Snowflake, and Azure  
-- Automated data redundancy reports using **PySpark, Airflow & AWS**  
+- Developed efficient data engineering solutions and created high-level dashboards for **academic projects** using **Power BI**.
+- Designed and implemented a scalable data pipeline with **Snowflake** and **Azure Data Flow** for the **retail sector**.
+- Built senior-management dashboards with **Tableau** to enhance decision-making by visualizing key metrics.
+- Utilized **PySpark** and **Airflow** to develop custom alerts for data issues in daily batch processing.
+- Built a complete **ETL pipeline**, transforming data and creating actionable visuals using **Python**, **SQL**, and **Power BI**.
+- Conducted in-house research on **retail customer segmentation** and converted dashboards from **Qlik** to **Power BI**, streamlining data integration and improving decision-making through enhanced visualization and actionable insights.
+
