@@ -1,7 +1,7 @@
 ## Introduction  
 I’m a Data Engineer and Computer Vision enthusiast with expertise in Python, SQL, and frameworks like PyTorch and TensorFlow. I specialize in building scalable data pipelines, creating data-driven solutions, and using tools like Power BI and Tableau to turn data into insights. Passionate about AI, automation, and big data, I’m always excited to solve complex problems and innovate.
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=006C8E)](https://linkedin.com/in/aashishpokhrel)  [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=E65100)](mailto:ashishpokhrel27@gmail.com) [![GitHub](https://img.shields.io/badge/Check%20Out%20My%20Projects-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashishpokhrel27)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=006C8E)](https://linkedin.com/in/aashishpokhrel)  [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=E65100)](mailto:ashishpokhrel27@gmail.com) [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aashishpokhrel27)
 
 
 
