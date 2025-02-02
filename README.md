@@ -10,9 +10,10 @@ I am a Data Engineer and Computer Vision enthusiast with a strong foundation in 
 ---
 
 ## 🎓 Education  
-**Tribhuvan University, Kathmandu, Nepal**  
+**Western Regional Campus, Pokhara, Nepal**  
 📅 **Nov 2016 - Sep 2021**  
-- Bachelor in Computer Engineering (76.83%)  
+- Tribhuvan University  
+- Bachelor of Engineering in Computer Engineering (76.83%)  
 - Relevant Courses: Machine Learning, AI, Data Mining, Big Data  
 
 ---
