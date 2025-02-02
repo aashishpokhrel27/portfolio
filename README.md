@@ -4,7 +4,7 @@
 [![Gmail](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ashishpokhrel27@gmail.com)  
 
 ## About Me  
-Experienced Software Engineer with expertise in Machine Learning, Data Engineering, and Web Development. Passionate about AI, automation, and building scalable solutions.  
+I am a Data Engineer and Computer Vision enthusiast with a strong foundation in data engineering and machine learning. With expertise in Python, SQL, and frameworks like PyTorch and TensorFlow, I specialize in building scalable data pipelines and creating impactful data-driven solutions. Passionate about solving complex problems, I leverage my skills in visualization tools like Power BI and Tableau to transform raw data into meaningful insights. Always eager to learn and innovate, I thrive on tackling challenges in AI, automation, and big data processing.  
 
 ---
 
@@ -17,7 +17,7 @@ Experienced Software Engineer with expertise in Machine Learning, Data Engineeri
 ---
 
 ## 💼 Professional Experience  
-### **Software Engineer, Data - LIS Nepal Pvt. Ltd.**  
+### **Senior Software Engineer, Data - LIS Nepal Pvt. Ltd.**  
 📍 Lalitpur, Nepal | 📅 **July 2021 - Present**  
 - Conducted **customer segmentation** using RFM analysis & clustering algorithms  
 - Developed **data pipelines & reports** using Python, Snowflake, and Azure  
