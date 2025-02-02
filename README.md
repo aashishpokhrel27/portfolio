@@ -35,3 +35,12 @@ I’m a Data Engineer and Computer Vision enthusiast with expertise in Python, S
 - Implemented **semantic segmentation** techniques utilizing **ResNet50**, **FCN-32s**, and fine-tuned **VGG16** models on the **PASCAL VOC2012** dataset for background image removal.
 - Created a fully functional website that processes portrait input images, extracts the foreground, and generates a PNG image, using **ReactJS**, **Django**, and **CSS3**.
 - [View the project on GitHub](https://github.com/aashishpokhrel27/BackgroundImageRemoval)
+
+---
+
+## 🛠 Skills  
+
+- **Programming Languages**: Python, SQL  
+- **Big Data & Data Engineering**: PySpark, Airflow, Snowflake, AWS (S3, Athena, Glue)  
+- **Data Visualization**: Power BI, Tableau  
+- **Machine Learning & Deep Learning**: PyTorch, TensorFlow  
