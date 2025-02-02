@@ -24,7 +24,7 @@ I’m a Data Engineer and Computer Vision enthusiast with expertise in Python, S
 - Built senior-management dashboards with **Tableau** to enhance decision-making by visualizing key metrics.
 - Utilized **PySpark** and **Airflow** to develop custom alerts for data issues in daily batch processing.
 - Built a complete **ETL pipeline**, transforming data and creating actionable visuals using **Python**, **SQL**, and **Power BI**.
-- Conducted in-house research on **retail customer segmentation** and converted dashboards from **Qlik** to **Power BI**, streamlining data integration and improving decision-making through enhanced visualization and actionable insights.
+- Conducted in-house research on dashboards conversion from **Qlik** to **Power BI**, streamlining data integration and improving decision-making through enhanced visualization and actionable insights.
 
 ---
 
