@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aashish Pokhrel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #faf9f6;
+      --ink: #1a1a18;
+      --ink-mid: #4a4a45;
+      --ink-light: #8a8a82;
+      --accent: #2a5298;
+      --accent-soft: #e8edf6;
+      --border: #e2e0d8;
+      --red: #b5392a;
+      --serif: 'EB Garamond', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 32px 80px;
+    }
+
+    /* ── TOP SECTION ─────────────────────────────── */
+    .top {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 56px;
+    }
+
+    .photo-col { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+
+    .photo-frame {
+      width: 160px;
+      height: 160px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #ddd;
+    }
+
+    .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .social-links a {
+      font-family: var(--sans);
+      font-size: 12.5px;
+      color: var(--ink-mid);
+      letter-spacing: 0.01em;
+    }
+
+    .social-links a:hover { color: var(--accent); text-decoration: none; }
+
+    .bio-col {}
+
+    .bio-name {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .bio-name .nepali {
+      font-size: 1.1rem;
+      color: var(--ink-mid);
+      margin-left: 8px;
+    }
+
+    .bio-contact {
+      font-size: 13px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-family: var(--sans);
+    }
+
+    .bio-text {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+
+    /* ── CV DROPDOWN ─────────────────────────────── */
+    .cv-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 13.5px;
+      color: var(--ink-mid);
+    }
+
+    .cv-links span { color: var(--ink-light); }
+
+    .cv-dropdown-wrap {
+      position: relative;
+      display: inline-block;
+    }
+
+    .cv-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 4px 12px;
+      font-size: 13.5px;
+      font-family: var(--sans);
+      color: var(--accent);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .cv-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
+
+    .cv-btn .caret {
+      font-size: 9px;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    .cv-btn.open .caret { transform: rotate(180deg); }
+
+    .cv-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      min-width: 180px;
+      z-index: 100;
+      overflow: hidden;
+    }
+
+    .cv-menu.open { display: block; }
+
+    .cv-menu a {
+      display: block;
+      padding: 9px 16px;
+      font-size: 13px;
+      color: var(--ink);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.12s;
+    }
+
+    .cv-menu a:last-child { border-bottom: none; }
+
+    .cv-menu a:hover {
+      background: var(--accent-soft);
+      text-decoration: none;
+    }
+
+    .cv-menu .menu-label {
+      font-size: 11px;
+      color: var(--ink-light);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 8px 16px 4px;
+    }
+
+    /* ── DIVIDER ─────────────────────────────── */
+    hr.section-rule {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0 0 36px;
+    }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section { margin-bottom: 52px; }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      color: var(--ink);
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── NEWS ─────────────────────────────── */
+    .news-list { list-style: none; }
+
+    .news-list li {
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--ink-mid);
+      padding: 7px 0;
+      border-bottom: 1px solid #f0ede6;
+      line-height: 1.6;
+    }
+
+    .news-list li:last-child { border-bottom: none; }
+
+    .news-date {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink-light);
+      white-space: nowrap;
+      padding-top: 2px;
+      min-width: 75px;
+    }
+
+    .news-list strong { color: var(--ink); font-weight: 500; }
+
+    .venue-tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 500;
+      padding: 1px 7px;
+      border-radius: 3px;
+      letter-spacing: 0.02em;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+
+    .venue-tag.workshop {
+      background: #f0f6ee;
+      color: #2e6b2a;
+    }
+
+    /* ── PUBLICATIONS ────────────────────────── */
+    .pub-list { list-style: none; }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid #f0ede6;
+      align-items: start;
+    }
+
+    .pub-item:last-child { border-bottom: none; }
+
+    .pub-thumb {
+      width: 120px;
+      height: 80px;
+      background: #ede9e0;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pub-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+    .pub-thumb-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: var(--ink-light);
+      text-align: center;
+      padding: 8px;
+      font-style: italic;
+    }
+
+    .pub-info {}
+
+    .pub-title {
+      font-family: var(--serif);
+      font-size: 1.02rem;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.45;
+      margin-bottom: 4px;
+    }
+
+    .pub-authors {
+      font-size: 13px;
+      color: var(--ink-light);
+      margin-bottom: 5px;
+      line-height: 1.5;
+    }
+
+    .pub-authors .me { color: var(--ink-mid); font-weight: 500; text-decoration: underline; text-decoration-style: dotted; }
+
+    .pub-venue {
+      font-size: 13px;
+      color: var(--ink-mid);
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .pub-venue .conf {
+      font-style: normal;
+      font-weight: 500;
+      color: var(--red);
+    }
+
+    .pub-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 12.5px;
+    }
+
+    .pub-links a {
+      color: var(--accent);
+      border: 1px solid var(--border);
+      padding: 2px 9px;
+      border-radius: 3px;
+      transition: background 0.12s, border-color 0.12s;
+    }
+
+    .pub-links a:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ── EXPERIENCE ────────────────────────── */
+    .exp-item { margin-bottom: 24px; }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .exp-role {
+      font-family: var(--serif);
+      font-size: 1.02rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .exp-date {
+      font-size: 12px;
+      color: var(--ink-light);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .exp-org {
+      font-size: 13.5px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .exp-bullets {
+      padding-left: 18px;
+      font-size: 13.5px;
+      color: var(--ink-mid);
+      line-height: 1.7;
+    }
+
+    .exp-bullets li { margin-bottom: 3px; }
+
+    /* ── EDUCATION ────────────────────────── */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0ede6;
+    }
+
+    .edu-item:last-child { border-bottom: none; }
+
+    .edu-degree {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ink);
+    }
+
+    .edu-school {
+      font-size: 13px;
+      color: var(--ink-mid);
+      margin-top: 2px;
+    }
+
+    .edu-date {
+      font-size: 12px;
+      color: var(--ink-light);
+      white-space: nowrap;
+      padding-top: 3px;
+    }
+
+    /* ── SKILLS ────────────────────────────── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .skill-group {}
+
+    .skill-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--ink-light);
+      margin-bottom: 5px;
+    }
+
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+
+    .skill-tag {
+      font-size: 12.5px;
+      color: var(--ink-mid);
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 2px 9px;
+    }
+
+    /* ── FOOTER ────────────────────────────── */
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 12.5px;
+      color: var(--ink-light);
+      text-align: center;
+    }
+
+    /* ── RESPONSIVE ────────────────────────── */
+    @media (max-width: 640px) {
+      .page-wrap { padding: 32px 20px 60px; }
+
+      .top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .photo-col {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .photo-frame { width: 90px; height: 90px; }
+
+      .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        text-align: left;
+      }
+
+      .pub-item { grid-template-columns: 1fr; }
+      .pub-thumb { width: 100%; height: 100px; }
+
+      .exp-header { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- ── TOP ── -->
+  <div class="top">
+    <div class="photo-col">
+      <div class="photo-frame">
+        <img src="assets/images/profile_img.png" alt="Aashish Pokhrel" onerror="this.style.display='none'"/>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/aashishpokhrel" target="_blank">LinkedIn</a>
+        <a href="https://github.com/aashishpokhrel27" target="_blank">GitHub</a>
+        <a href="mailto:ashishpokhrel27@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <div class="bio-col">
+      <h1 class="bio-name">Aashish Pokhrel</h1>
+      <p class="bio-contact">ashishpokhrel27 [at] gmail [dot] com</p>
+      <p class="bio-text">
+        I am a Data Engineer and Computer Vision researcher based in Nepal. My recent research focuses on <strong>negation understanding in vision-language models</strong> — studying how models reason about what is absent or denied in language and vision. I work at LIS Nepal Pvt. Ltd. as a Senior Software Engineer (Data), where I build scalable data pipelines and dashboards. I am passionate about the intersection of machine learning, big data, and real-world impact.
+      </p>
+
+      <div class="cv-links">
+        <span>Curriculum Vitæ</span>
+
+        <div class="cv-dropdown-wrap" id="cvWrap">
+          <button class="cv-btn" id="cvBtn" onclick="toggleCV(event)">
+            Download CV <span class="caret">▼</span>
+          </button>
+          <div class="cv-menu" id="cvMenu">
+            <div class="menu-label">Select version</div>
+            <a href="assets/cv/cv_academic.pdf" target="_blank">Academic CV</a>
+            <a href="assets/cv/cv_professional.pdf" target="_blank">Professional CV</a>
+          </div>
+        </div>
+
+        <span>/</span>
+        <a href="https://github.com/aashishpokhrel27" target="_blank">GitHub</a>
+        <span>/</span>
+        <a href="https://linkedin.com/in/aashishpokhrel" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule"/>
+
+  <!-- ── NEWS ── -->
+  <div class="section">
+    <h2 class="section-title">News</h2>
+    <ul class="news-list">
+      <li>
+        <span class="news-date">Mar 2026</span>
+        <span>Paper accepted at <span class="venue-tag">ICPR 2026</span> — <strong>Negation in Vision-Language Models: A Survey</strong></span>
+      </li>
+      <li>
+        <span class="news-date">Mar 2026</span>
+        <span>Research accepted at <span class="venue-tag workshop">GRAIL-V @ CVPR 2026</span> — <strong>Negation Matters: Training-Free Negation-Aware Image Retrieval</strong></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ── PUBLICATIONS ── -->
+  <div class="section">
+    <h2 class="section-title">Publications</h2>
+    <ul class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-thumb">
+          <div class="pub-thumb-placeholder">Survey paper teaser</div>
+        </div>
+        <div class="pub-info">
+          <p class="pub-title">Negation in Vision-Language Models: A Survey</p>
+          <p class="pub-authors"><span class="me">Aashish Pokhrel</span> et al.</p>
+          <p class="pub-venue"><span class="conf">ICPR 2026</span> &nbsp;·&nbsp; International Conference on Pattern Recognition</p>
+          <div class="pub-links">
+            <a href="#">pdf</a>
+            <a href="#">abstract</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-thumb">
+          <div class="pub-thumb-placeholder">Retrieval method teaser</div>
+        </div>
+        <div class="pub-info">
+          <p class="pub-title">Negation Matters: Training-Free Negation-Aware Image Retrieval</p>
+          <p class="pub-authors"><span class="me">Aashish Pokhrel</span> et al.</p>
+          <p class="pub-venue"><span class="conf">GRAIL-V Workshop @ CVPR 2026</span></p>
+          <div class="pub-links">
+            <a href="#">pdf</a>
+            <a href="#">abstract</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- ── EXPERIENCE ── -->
+  <div class="section">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-role">Senior Software Engineer, Data</span>
+        <span class="exp-date">Jul 2021 – Present</span>
+      </div>
+      <p class="exp-org">LIS Nepal Pvt. Ltd. &nbsp;·&nbsp; Lalitpur, Nepal</p>
+      <ul class="exp-bullets">
+        <li>Designed and implemented a scalable data pipeline with <strong>Snowflake</strong> and <strong>Azure Data Flow</strong> for the retail sector.</li>
+        <li>Built senior-management dashboards with <strong>Tableau</strong> to enhance decision-making by visualizing key metrics.</li>
+        <li>Developed custom alerts for data issues in daily batch processing using <strong>PySpark</strong> and <strong>Airflow</strong>.</li>
+        <li>Built complete <strong>ETL pipelines</strong> transforming data and creating actionable visuals with Python, SQL, and Power BI.</li>
+        <li>Led in-house research on dashboard migration from <strong>Qlik</strong> to <strong>Power BI</strong>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── EDUCATION ── -->
+  <div class="section">
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-item">
+      <div>
+        <p class="edu-degree">Bachelor of Engineering in Computer Engineering</p>
+        <p class="edu-school">Tribhuvan University &nbsp;·&nbsp; Western Regional Campus, Pokhara</p>
+        <p class="edu-school" style="margin-top:2px; font-size:12.5px; color:#8a8a82;">76.83% &nbsp;·&nbsp; Relevant: Machine Learning, AI, Data Mining, Big Data</p>
+      </div>
+      <span class="edu-date">2016 – 2021</span>
+    </div>
+  </div>
+
+  <!-- ── SKILLS ── -->
+  <div class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <p class="skill-label">Languages</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">Data Engineering</p>
+        <div class="skill-tags">
+          <span class="skill-tag">PySpark</span>
+          <span class="skill-tag">Airflow</span>
+          <span class="skill-tag">Snowflake</span>
+          <span class="skill-tag">AWS S3/Athena/Glue</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">Visualization</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Tableau</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">ML / DL</p>
+        <div class="skill-tags">
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Design inspired by <a href="https://jonbarron.info/" target="_blank">Jon Barron</a>'s website template.
+  </div>
+
+</div>
+
+<script>
+  function toggleCV(e) {
+    e.stopPropagation();
+    const btn = document.getElementById('cvBtn');
+    const menu = document.getElementById('cvMenu');
+    const isOpen = menu.classList.contains('open');
+    menu.classList.toggle('open', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+  }
+
+  document.addEventListener('click', function() {
+    document.getElementById('cvMenu').classList.remove('open');
+    document.getElementById('cvBtn').classList.remove('open');
+  });
+</script>
+</body>
+</html>
