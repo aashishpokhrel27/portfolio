@@ -38,23 +38,23 @@
     .page-wrap {
       max-width: 900px;
       margin: 0 auto;
-      padding: 60px 32px 80px;
+      padding: 36px 32px 48px;
     }
 
     /* ── TOP SECTION ─────────────────────────────── */
     .top {
       display: grid;
-      grid-template-columns: 180px 1fr;
+      grid-template-columns: 220px 1fr;
       gap: 40px;
       align-items: start;
-      margin-bottom: 56px;
+      margin-bottom: 28px;
     }
 
     .photo-col { display: flex; flex-direction: column; align-items: center; gap: 14px; }
 
     .photo-frame {
-      width: 160px;
-      height: 160px;
+      width: 200px;
+      height: 200px;
       border-radius: 4px;
       overflow: hidden;
       border: 1px solid var(--border);
@@ -91,12 +91,6 @@
       margin-bottom: 4px;
     }
 
-    .bio-name .nepali {
-      font-size: 1.1rem;
-      color: var(--ink-mid);
-      margin-left: 8px;
-    }
-
     .bio-contact {
       font-size: 13px;
       color: var(--ink-light);
@@ -108,7 +102,7 @@
       font-family: var(--serif);
       font-size: 1.05rem;
       color: var(--ink-mid);
-      line-height: 1.75;
+      line-height: 1.35;
       margin-bottom: 20px;
     }
 
@@ -186,23 +180,15 @@
       text-decoration: none;
     }
 
-    .cv-menu .menu-label {
-      font-size: 11px;
-      color: var(--ink-light);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 8px 16px 4px;
-    }
-
     /* ── DIVIDER ─────────────────────────────── */
     hr.section-rule {
       border: none;
       border-top: 1px solid var(--border);
-      margin: 0 0 36px;
+      margin: 0 0 24px;
     }
 
     /* ── SECTIONS ─────────────────────────────── */
-    .section { margin-bottom: 52px; }
+    .section { margin-bottom: 14px; }
 
     .section-title {
       font-family: var(--serif);
@@ -210,7 +196,7 @@
       font-weight: 400;
       letter-spacing: 0.01em;
       color: var(--ink);
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       padding-bottom: 8px;
       border-bottom: 1px solid var(--border);
     }
@@ -300,8 +286,6 @@
       font-style: italic;
     }
 
-    .pub-info {}
-
     .pub-title {
       font-family: var(--serif);
       font-size: 1.02rem;
@@ -354,8 +338,29 @@
       text-decoration: none;
     }
 
+    /* ── ABSTRACT PANEL ────────────────────── */
+    .abstract-panel {
+      display: none;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 3px 3px 0;
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink-mid);
+      line-height: 1.6;
+    }
+
+    .abstract-panel.open { display: block; }
+
+    .pub-links a.abstract-active {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+    }
+
     /* ── EXPERIENCE ────────────────────────── */
-    .exp-item { margin-bottom: 24px; }
+    .exp-item { margin-bottom: 20px; }
 
     .exp-header {
       display: flex;
@@ -431,8 +436,6 @@
       gap: 14px;
     }
 
-    .skill-group {}
-
     .skill-label {
       font-size: 11px;
       text-transform: uppercase;
@@ -454,7 +457,7 @@
 
     /* ── FOOTER ────────────────────────────── */
     .footer {
-      margin-top: 60px;
+      margin-top: 24px;
       padding-top: 20px;
       border-top: 1px solid var(--border);
       font-size: 12.5px;
@@ -464,11 +467,11 @@
 
     /* ── RESPONSIVE ────────────────────────── */
     @media (max-width: 640px) {
-      .page-wrap { padding: 32px 20px 60px; }
+      .page-wrap { padding: 28px 20px 48px; }
 
       .top {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 20px;
       }
 
       .photo-col {
@@ -477,7 +480,7 @@
         gap: 20px;
       }
 
-      .photo-frame { width: 90px; height: 90px; }
+      .photo-frame { width: 100px; height: 100px; }
 
       .social-links {
         flex-direction: row;
@@ -502,34 +505,28 @@
       <div class="photo-frame">
         <img src="assets/images/image.jpeg" alt="Aashish Pokhrel" onerror="this.style.display='none'"/>
       </div>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/aashishpokhrel" target="_blank">LinkedIn</a>
-        <a href="https://github.com/aashishpokhrel27" target="_blank">GitHub</a>
-        <a href="mailto:ashishpokhrel27@gmail.com">Email</a>
-      </div>
     </div>
 
     <div class="bio-col">
-      <h1 class="bio-name">Aashish Pokhrel</h1>
-      <p class="bio-contact">ashishpokhrel27 [at] gmail [dot] com</p>
-      <p class="bio-text">
-        I am a Data Engineer and Computer Vision researcher based in Nepal. My recent research focuses on <strong>negation understanding in vision-language models</strong> — studying how models reason about what is absent or denied in language and vision. I work at LIS Nepal Pvt. Ltd. as a Senior Software Engineer (Data), where I build scalable data pipelines and dashboards. I am passionate about the intersection of machine learning, big data, and real-world impact.
+      <h1 class="bio-name">Aashish Pokhrel आशिष</h1>
+      <p class="bio-contact">ashishpokhrel27 [at] gmail [dot] com &nbsp;·&nbsp; Laramie, WY</p>
+      <p class="bio-text" style="text-align: justify;">
+        I am a Computer Science Graduate Student at the University of Wyoming (GPA 4.0) with over <b>3 years of experience as a consultant for Fortune 500 retail clients</b>. My professional background is rooted in architecting large-scale Data Engineering and Analytics solutions, where I transform complex enterprise datasets into high-impact business intelligence. Complementing this engineering foundation, my research focuses on improving the <b>logical reasoning of Vision-Language Models</b>, specifically addressing how multimodal systems understand <b>negation and compositional concepts</b>. This dual expertise allows me to bridge the gap between advanced academic research and the robust, scalable infrastructure required for real-world deployment.
       </p>
 
       <div class="cv-links">
-        <span>Curriculum Vitæ</span>
-
         <div class="cv-dropdown-wrap" id="cvWrap">
-          <button class="cv-btn" id="cvBtn" onclick="toggleCV(event)">
-            Download CV <span class="caret">▼</span>
+          <button 
+          class="cv-btn" 
+          id="cvBtn" 
+          onclick="toggleCV(event)">
+            CV [coming soon]<span class="caret">▼</span>
           </button>
-          <div class="cv-menu" id="cvMenu">
-            <div class="menu-label">Select version</div>
+          <!-- <div class="cv-menu" id="cvMenu">
             <a href="assets/cv/cv_academic.pdf" target="_blank">Academic CV</a>
             <a href="assets/cv/cv_professional.pdf" target="_blank">Professional CV</a>
-          </div>
+          </div> -->
         </div>
-
         <span>/</span>
         <a href="https://github.com/aashishpokhrel27" target="_blank">GitHub</a>
         <span>/</span>
@@ -546,11 +543,11 @@
     <ul class="news-list">
       <li>
         <span class="news-date">Mar 2026</span>
-        <span>Paper accepted at <span class="venue-tag">ICPR 2026</span> — <strong>Negation in Vision-Language Models: A Survey</strong></span>
+        <span>Paper accepted at <span class="venue-tag"><a href="https://icpr2026.org/">ICPR 2026</a></span> — <strong>Negation in Vision-Language Models: A Survey</strong></span>
       </li>
       <li>
         <span class="news-date">Mar 2026</span>
-        <span>Research accepted at <span class="venue-tag workshop">GRAIL-V @ CVPR 2026</span> — <strong>Negation Matters: Training-Free Negation-Aware Image Retrieval</strong></span>
+        <span>Research accepted at <span class="venue-tag workshop"><a href="https://grailworkshops.github.io/" style="color: #5d7c35">GRAIL-V @ CVPR 2026</a></span> — <strong>Negation Matters: Training-Free Negation-Aware Image Retrieval</strong></span>
       </li>
     </ul>
   </div>
@@ -562,30 +559,38 @@
 
       <li class="pub-item">
         <div class="pub-thumb">
-          <div class="pub-thumb-placeholder">Survey paper teaser</div>
+          <img src="assets/images/survery.png" />
         </div>
         <div class="pub-info">
           <p class="pub-title">Negation in Vision-Language Models: A Survey</p>
-          <p class="pub-authors"><span class="me">Aashish Pokhrel</span> et al.</p>
-          <p class="pub-venue"><span class="conf">ICPR 2026</span> &nbsp;·&nbsp; International Conference on Pattern Recognition</p>
+          <p class="pub-authors"><span class="me"><b>Aashish Pokhrel</b></span>, <a href="https://bipin38.github.io/Portfolio/" style="color: gray;">Bipin Ghimire</a>, <a href="https://pmpaudel.com.np/" style="color: gray;">Prashanna Mani Poudel</a> and <a href="https://sheshap.github.io/" style="color: gray;">Shivanand Venkanna Sheshappanavar</a></p>
+          <p class="pub-venue"><span class="conf"><a href="https://icpr2026.org/">ICPR 2026</a></span></p>
           <div class="pub-links">
-            <a href="#">pdf</a>
-            <a href="#">abstract</a>
+            <a href="#">pdf [comming soon]</a>
+            <a href="#" class="abstract-toggle" data-target="abstract-survey">abstract</a>
+          </div>
+          <div class="abstract-panel" id="abstract-survey" style="text-align: justify;">
+            Vision-language models (VLMs) have achieved strong performance by aligning visual and textual representations, enabling success in tasks such as image retrieval, captioning, and visual recognition. However, recent studies show that VLMs struggle with negation, i.e., expressions describing absence or falsity. As a result, models often show affirmation bias, where negated and affirmative statements are treated similarly, leading to semantic collapse and poor reasoning.
+Providing essential background on VLMs and negation in natural language processing (NLP), this survey reviews prior work on negation in VLMs and organizes it into four main components. First, it examines key challenges that limit negation understanding, including semantic collapse, the NO Syndrome, scaling effects, data scarcity, and the cognitive complexity of negation. Second, it discusses how negation is defined and evaluated in multimodal settings. Third, it reviews methods for improving negation awareness, including data-centric and architectural approaches. Finally, it highlights the practical impact of negation-aware modeling and outlines future research directions.
           </div>
         </div>
       </li>
 
       <li class="pub-item">
         <div class="pub-thumb">
-          <div class="pub-thumb-placeholder">Retrieval method teaser</div>
+          <img src="assets/images/retrieval.png"/>
         </div>
         <div class="pub-info">
           <p class="pub-title">Negation Matters: Training-Free Negation-Aware Image Retrieval</p>
-          <p class="pub-authors"><span class="me">Aashish Pokhrel</span> et al.</p>
-          <p class="pub-venue"><span class="conf">GRAIL-V Workshop @ CVPR 2026</span></p>
+          <p class="pub-authors"><span class="me"><b>Aashish Pokhrel</b></span> and <a href="https://sheshap.github.io/" style="color: gray;">Shivanand Venkanna Sheshappanavar</a></p>
+          <p class="pub-venue"><span class="conf"><a href="https://grailworkshops.github.io/"; style="color: #5d7c35">GRAIL-V @ CVPR 2026</a></span></p>
           <div class="pub-links">
-            <a href="#">pdf</a>
-            <a href="#">abstract</a>
+            <a href="#">pdf [comming soon]</a>
+            <a href="#" class="abstract-toggle" data-target="abstract-retrieval">abstract</a>
+          </div>
+          <div class="abstract-panel" id="abstract-retrieval" style="text-align: justify;">
+            Negation—the linguistic ability to assert the absence of a concept—is a critical bottleneck in vision-language understanding. Vision-language models have demonstrated remarkable success in aligning visual and textual representation across domains such as content moderation, medical image retrieval, and natural language-guided search. Yet, these models consistently fail to handle negation
+robustly, often retrieving images that contain the very concept that was explicitly excluded. Existing methods address this limitation through fine-tuning on synthetic negation corpora—an approach that is computationally expensive, dataset-dependent, and prone to compromising generalization to unseen distributions. We propose <b>SpaceVLM-DRC</b>, which introduces <b>D</b>ynamic <b>R</b>epulsion with <b>C</b>ontext Anchoring (DRC) into the SpaceVLM framework as a training-free inference time negation resolution mechanism over a frozen CLIP backbone. This framework first decomposes queries into affirmative, negated, and counterfactual components, then applies dynamic repulsion to push negated concepts away in the embedding space, and finally anchors retrieval within the full-caption context to preserve semantic coherence. SpaceVLM-DRC surpasses state-of-the-art results on the MSRVTT negation retrieval benchmark and achieves performance comparable to fully fine-tuned approaches on the COCO negated retrieval dataset. Crucially, it requires no model retraining while preserving zero-shot generalization on non-negated queries. Our code is available at <a href="https://github.com/aashishpokhrel27/spacevlm-drc">https://github.com/aashishpokhrel27/spacevlm-drc</a>.
           </div>
         </div>
       </li>
@@ -593,24 +598,53 @@
     </ul>
   </div>
 
-  <!-- ── EXPERIENCE ── -->
+  <!-- ── RESEARCH EXPERIENCE ── -->
   <div class="section">
-    <h2 class="section-title">Experience</h2>
+    <h2 class="section-title">Research Experience</h2>
 
     <div class="exp-item">
       <div class="exp-header">
-        <span class="exp-role">Senior Software Engineer, Data</span>
-        <span class="exp-date">Jul 2021 – Present</span>
+        <span class="exp-role">Graduate Research Assistant</span>
+        <span class="exp-date">Aug 2025 – Present</span>
       </div>
-      <p class="exp-org">LIS Nepal Pvt. Ltd. &nbsp;·&nbsp; Lalitpur, Nepal</p>
+      <p class="exp-org">University of Wyoming</p>
       <ul class="exp-bullets">
-        <li>Designed and implemented a scalable data pipeline with <strong>Snowflake</strong> and <strong>Azure Data Flow</strong> for the retail sector.</li>
-        <li>Built senior-management dashboards with <strong>Tableau</strong> to enhance decision-making by visualizing key metrics.</li>
-        <li>Developed custom alerts for data issues in daily batch processing using <strong>PySpark</strong> and <strong>Airflow</strong>.</li>
-        <li>Built complete <strong>ETL pipelines</strong> transforming data and creating actionable visuals with Python, SQL, and Power BI.</li>
-        <li>Led in-house research on dashboard migration from <strong>Qlik</strong> to <strong>Power BI</strong>.</li>
+        <li>Researching Vision-Language Models (VLMs) with a focus on improving negation awareness and compositionality, which includes developing training-free frameworks like SpaceVLM-DRC using LLM-based decomposition and dynamic repulsion to achieve state-of-the-art results in image retrieval.</li>
       </ul>
     </div>
+  </div>
+
+  <!-- ── EXPERIENCE ── -->
+  <div class="section">
+    <h2 class="section-title">Industry Experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-role">Data Engineer &nbsp;·&nbsp; Consultant</span>
+        <span class="exp-date">Jan 2025 – Jul 2025</span>
+      </div>
+      <p class="exp-org"><a href="https://ycotek.ai/">Ycotek</a></p>
+      <ul class="exp-bullets">
+        <li>Designed Power BI dashboards with optimized semantic models and DAX calculations to monitor academic recruitment funnel conversion rates across 10+ key dimensions, enabling data-driven decision-making.</li>
+        <li>Implemented Snowflake data pipelines using <strong>Azure Data Factory</strong> and Python, achieving 30–40% performance gains in automated data ingestion and modeling for institutional reporting.</li>
+        <li>Performed exploratory data analysis to surface enrollment trends and identify data quality issues, delivering concise stakeholder summaries to guide business decisions.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-role">Data Engineer, Business Intelligence &nbsp;·&nbsp; Consultant</span>
+        <span class="exp-date">Aug 2022 – Jan 2025</span>
+      </div>
+      <p class="exp-org"><a href="https://logicinfo.com/">Logic Information Systems</a> &nbsp;·&nbsp; Fortune 500 Retail Clients</p>
+      <ul class="exp-bullets">
+        <li>Designed, developed, and maintained end-to-end ETL/ELT pipelines processing retail sales, inventory, and compliance data using <strong>Python, SQL, PySpark, Snowflake, BigQuery,</strong> and <strong>Azure Data Factory</strong> — achieving 100% pipeline reliability.</li>
+        <li>Built time-series analytics and <strong>RFM segmentation</strong> models on large-scale retail datasets to uncover sales patterns and inventory optimization opportunities, directly informing merchandising and supply chain decisions.</li>
+        <li>Engineered executive-level dashboards (MicroStrategy, Tableau, AtScale) with multi-granularity daily ingestion; reduced QA/testing time by 25% through automated discrepancy monitoring and data validation pipelines.</li>
+        <li>Collaborated cross-functionally with Planning, Merchandising, Finance, and Operations teams to translate business questions into analytical models and present findings to stakeholders and leadership.</li>
+      </ul>
+    </div>
+
   </div>
 
   <!-- ── EDUCATION ── -->
@@ -619,11 +653,18 @@
 
     <div class="edu-item">
       <div>
-        <p class="edu-degree">Bachelor of Engineering in Computer Engineering</p>
-        <p class="edu-school">Tribhuvan University &nbsp;·&nbsp; Western Regional Campus, Pokhara</p>
-        <p class="edu-school" style="margin-top:2px; font-size:12.5px; color:#8a8a82;">76.83% &nbsp;·&nbsp; Relevant: Machine Learning, AI, Data Mining, Big Data</p>
+        <p class="edu-degree">Master of Science in Computer Science</p>
+        <p class="edu-school">University of Wyoming &nbsp;·&nbsp; GPA: 4.0</p>
       </div>
-      <span class="edu-date">2016 – 2021</span>
+      <span class="edu-date">Aug 2025 – Dec 2026 (Expected)</span>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <p class="edu-degree">Bachelor of Engineering in Computer Engineering</p>
+        <p class="edu-school">Tribhuvan University &nbsp;·&nbsp; 76.83% (GPA: ~3.8)</p>
+      </div>
+      <span class="edu-date">2021</span>
     </div>
   </div>
 
@@ -632,33 +673,66 @@
     <h2 class="section-title">Skills</h2>
     <div class="skills-grid">
       <div class="skill-group">
-        <p class="skill-label">Languages</p>
+        <p class="skill-label">Languages & AI Frameworks</p>
         <div class="skill-tags">
           <span class="skill-tag">Python</span>
+          <span class="skill-tag">R</span>
           <span class="skill-tag">SQL</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">Databases</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Snowflake</span>
+          <span class="skill-tag">BigQuery</span>
+          <span class="skill-tag">Redshift</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQL Server</span>
         </div>
       </div>
       <div class="skill-group">
         <p class="skill-label">Data Engineering</p>
         <div class="skill-tags">
+          <span class="skill-tag">ETL/ELT</span>
           <span class="skill-tag">PySpark</span>
-          <span class="skill-tag">Airflow</span>
-          <span class="skill-tag">Snowflake</span>
-          <span class="skill-tag">AWS S3/Athena/Glue</span>
+          <span class="skill-tag">Apache Airflow</span>
+          <span class="skill-tag">dbt</span>
+          <span class="skill-tag">Hadoop</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Data Warehousing</span>
         </div>
       </div>
       <div class="skill-group">
-        <p class="skill-label">Visualization</p>
+        <p class="skill-label">Cloud</p>
+        <div class="skill-tags">
+          <span class="skill-tag">GCP</span>
+          <span class="skill-tag">AWS S3/Lambda</span>
+          <span class="skill-tag">Microsoft Azure</span>
+          <span class="skill-tag">Azure Data Factory</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-label">Reporting & BI</p>
         <div class="skill-tags">
           <span class="skill-tag">Power BI</span>
           <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">MicroStrategy</span>
+          <span class="skill-tag">MS Excel</span>
         </div>
       </div>
       <div class="skill-group">
-        <p class="skill-label">ML / DL</p>
+        <p class="skill-label">Tools & Methods</p>
         <div class="skill-tags">
-          <span class="skill-tag">PyTorch</span>
-          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Jira</span>
+          <span class="skill-tag">Scrum/Agile</span>
+          <span class="skill-tag">UML</span>
+          <span class="skill-tag">LaTeX</span>
         </div>
       </div>
     </div>
@@ -671,6 +745,7 @@
 </div>
 
 <script>
+  // ── CV dropdown ──────────────────────────────
   function toggleCV(e) {
     e.stopPropagation();
     const btn = document.getElementById('cvBtn');
@@ -683,6 +758,33 @@
   document.addEventListener('click', function() {
     document.getElementById('cvMenu').classList.remove('open');
     document.getElementById('cvBtn').classList.remove('open');
+  });
+
+  // ── Abstract toggle ───────────────────────────
+  document.addEventListener('click', function(e) {
+    const toggle = e.target.closest('.abstract-toggle');
+
+    if (toggle) {
+      e.preventDefault();
+      e.stopPropagation();
+      const targetId = toggle.dataset.target;
+      const panel = document.getElementById(targetId);
+      const isOpen = panel.classList.contains('open');
+
+      // Close all panels and deactivate all toggles
+      document.querySelectorAll('.abstract-panel.open').forEach(p => p.classList.remove('open'));
+      document.querySelectorAll('.abstract-toggle.abstract-active').forEach(t => t.classList.remove('abstract-active'));
+
+      // If it wasn't open, open it
+      if (!isOpen) {
+        panel.classList.add('open');
+        toggle.classList.add('abstract-active');
+      }
+    } else {
+      // Clicking anything else collapses all abstract panels
+      document.querySelectorAll('.abstract-panel.open').forEach(p => p.classList.remove('open'));
+      document.querySelectorAll('.abstract-toggle.abstract-active').forEach(t => t.classList.remove('abstract-active'));
+    }
   });
 </script>
 </body>
